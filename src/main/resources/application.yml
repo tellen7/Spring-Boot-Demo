@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update #不存在则创建，存在则更新
+    show-sql: true
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
